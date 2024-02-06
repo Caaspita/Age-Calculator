@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Caspita | Age calculator app</title>
+
+</head>
+<body class="contenedor">
+  <section class="box-card">
+      <form class="box-form">
+        <div class="form-group">
+          <label class="form-label errorlabel" for="inday">Day</label>
+          <input id="inday" class="form-input" type="number" placeholder="DD">
+          <label class="error ocultar">Must be valid Day</label>
+        </div>
+        <div class="form-group">
+          <label class="form-label errorlabel" for="inmonth">Month</label>
+          <input id="inmonth" class="form-input" type="number" placeholder="MM">
+          <label class="error ocultar">Must be valid Month</label>
+        </div>
+        <div class="form-group">
+          <label class="form-label errorlabel" for="inyear">Year</label>
+          <input id="inyear" class="form-input" type="number" placeholder="YYYY">
+          <label class="error ocultar">Must be valid Year</label>
+        </div>
+        <div class="form-group">
+          <button onclick="validarForm()" class="btn" id="btn" type="submit"><img src="./assets/images/icon-arrow.svg"></button>
+        </div>
+      </form>
+    <div class="result">
+      <div class="result-box">
+        <p class="result-num" id="year">--</p>
+        <p>Years</p>
+      </div>
+      <div class="result-box">
+        <p class="result-num" id="month">--</p>
+        <p>Months</p>
+      </div>
+      <div class="result-box">
+        <p class="result-num" id="day">--</p>
+        <p>Days</p>
+      </div>
+    </div>
+  </section>
+<script src="app.js"></script>
+</body>
+</html>
